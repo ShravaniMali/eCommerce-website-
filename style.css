@@ -1,1 +1,455 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sams-serif;
+    scroll-behavior: smooth;
+  }
+  
+  h1{
+    font-size: 50px;
+    line-height: 60px;
+    color:black;
+}
 
+h2{
+    font-size: 50px;
+    line-height: 60px;
+    color:black;
+}
+h4{
+    font-size: 20px;
+    /* line-height: 55px; */
+    /* color:black; */
+}h6{
+    font-size: 12px;
+    font-weight:700;
+    /* line-height: 60px; */
+    /* color:black; */
+}
+
+
+p{
+    font-size: 16px;
+    color:black;
+    margin:15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+
+/* button.normal{
+    padding: 15px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight:600 ;
+    background-color:black;
+    color: black;
+    border :0;
+
+} */
+
+  body {
+    width:100%;
+}
+  
+#header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:20px 80px;
+    background-color:	#008080; 
+    box-shadow: 0 5px 15px black;
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left:0;
+}
+/* home */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+#navbar li{
+    position: relative;
+    list-style:none;
+    padding: 0 20px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:aliceblue;
+    transition: 0.3s ease;
+}
+#navbar li a:hover{
+    color:orange;
+}
+
+#navbar li a.active{
+    color: orange;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+   content:"";
+   width: 30%;
+   height: 2px;
+   background-color: orange;
+   position: absolute;
+   bottom: -4px;
+   left: 20px;
+
+}
+
+/* allabout */
+#allabout{
+   background-image:url("https://img.freepik.com/free-vector/background-template-with-mandala-pattern-design_1308-42133.jpg?w=2000");
+   background-color: #b5eb8e ;
+   height:90vh;
+   width:100%;
+   text-align: center;
+   background-size:cover;
+   background-position: top 25% right 0;
+   padding:0 80px ;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:center;
+}
+#allabout h4{
+    padding-bottom: 15px;
+    text-align: center;
+}
+#allabout p{
+    text-align: end;
+    color:black ;
+}
+#allabout button{
+    background-color: rgb(204, 72, 31);
+    color: white;
+    border :0;
+    /* padding: 14px 80px 14px 65px; */
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight:700 ;
+}
+
+#shop{
+   /* background-image:url("https://cdn.pixabay.com/photo/2022/05/08/16/54/artwork-7182495_960_720.jpg") ; */
+   /* background-image: url("https://img.freepik.com/free-vector/background-template-with-mandala-pattern-design_1308-43584.jpg"); */
+   background-image: url("https://img.freepik.com/free-vector/background-template-with-mandala-pattern-design_1308-43584.jpg");
+   background-color: beige;
+   height:90vh;
+   width:100%;
+   background-size:cover;
+   background-position: top 25% right 0;
+   padding:0 80px ;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content:center;
+}
+
+#shop p{
+color: black;
+}
+#shop button{
+    background-color: rgb(204, 72, 31);
+    color: white;
+    border :0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight:700 ;
+}
+#product1{
+    text-align:center;
+    /* background-image: url("https://img.freepik.com/premium-photo/turquiose-bokeh-abstract-background_63313-1084.jpg?size=626&ext=jpg&ga=GA1.1.1417094803.1695360915&semt=ais"); */
+    background-color: #ace0ca;
+}
+#product1 .pro-container{
+    display :flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap:wrap ;
+}
+#product1 .cont2{
+    display :flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap:wrap ;
+}
+#product1 .pro{
+    background-color:azure;
+    width:23%;
+    min-width:250px;
+    padding: 17px 20px;
+    border:1px solid #62B6B7;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2sec ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.06) ;
+
+}
+
+#product1 .pro img{
+    width:100%;
+    border-radius:20px;
+}
+
+#product1 .pro.des{
+    text-align: left;
+    padding: 10px 0;
+
+}
+#product1.pro.des span{
+    color:pink;
+    font-size: 12px;
+}
+
+#product1.pro.des h5{
+    padding: 7px;
+    color:#62B6B7;
+    font-size: 14px;
+}
+#col{
+    background-color: #ace0ca;
+    text-align: center;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://img.freepik.com/free-vector/beautiful-raksha-bandhan-banner-with-text-space-floral-design_1017-38983.jpg?size=626&ext=jpg&ga=GA1.1.1417094803.1695360915&semt=ais"); 
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position:center ;
+}
+#banner button{
+    background-color:pink;
+    color: black;
+    border :0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat; 
+    cursor: pointer;
+    font-size: 15px;
+    font-weight:700 ;
+    width: fit-content;
+}
+#banner button:hover{
+    background-color: rgb(255, 173, 20);
+    color: black;
+}
+#sm-banner{
+    display :flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+    flex-wrap:wrap ;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex start;
+    text-align: center;
+    /* background-color:#c8a2c8; */
+    /* background-image: url("https://img.freepik.com/premium-photo/stack-handkerchief-blue-background_51665-168.jpg?w=900"); */
+    background-image: url("https://static.wixstatic.com/media/a2ae29_8924c94c97db4a49a23a5aadbbe11552~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a2ae29_8924c94c97db4a49a23a5aadbbe11552~mv2.jpg"); 
+    min-width:580px;
+    height: 50vh;
+    background-size: cover;
+    background-position:center ;
+    padding: 30px;
+    text-align:right;
+}
+/* #sm-banner h4{
+     color: black;
+     text-align: right;
+     font-size: 20px;
+     font-weight: 300;
+
+}
+#sm-banner h2{
+    color: black;
+    text-align: right;
+    /* font-size: 20px; */
+    /* font-weight: 300; }*/
+
+    #sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex start;
+    text-align: center;
+    color:white ;
+    /* background-color:#c8a2c8; */
+    background-image: url("https://t3.ftcdn.net/jpg/00/98/78/46/360_F_98784649_tWwDkRMkBlNBzgFPgIyHz25yfq8IvLQf.jpg");
+    /* background-image: url("https://static.wixstatic.com/media/a2ae29_8924c94c97db4a49a23a5aadbbe11552~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a2ae29_8924c94c97db4a49a23a5aadbbe11552~mv2.jpg");  */
+    min-width:580px;
+    height: 50vh;
+    background-size: cover;
+    background-position:center ;
+    padding: 30px;
+    text-align:right;
+}
+#sm-banner .banner-box p{
+    color: white;
+}
+#sm-banner .banner-box h2{
+    color: white;
+}
+#sm-banner .banner-box button{
+    background-color:black;
+    color: palevioletred;
+    border :0;
+        /* padding: 14px 80px 14px 65px; */
+     background-repeat: no-repeat; 
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:600 ;
+    width: 85;
+    align-self: center;
+}
+#sm-banner .banner-box button:hover{
+    background-color:palevioletred;
+    color: black;
+}
+
+#sm-banner .banner-box2 button{
+    background-color:black;
+    color:gold;
+    border :0;
+        /* padding: 14px 80px 14px 65px; */
+     background-repeat: no-repeat; 
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:600 ;
+    width: 85;
+    align-self: center;
+}
+#sm-banner .banner-box2 button:hover{
+    background-color: rgb(255, 173, 20);
+    color: black;
+}
+#sm-banner .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex start;
+    text-align: center;
+    /* background-color:#c8a2c8; */
+    background-image: url("https://t4.ftcdn.net/jpg/03/09/68/57/360_F_309685781_mBaHmLqYEHKyoJDOf3K2XKi1h7R6NAu0.jpg");
+    /* background-image: url("https://www.shutterstock.com/shutterstock/photos/398424772/display_1500/stock-vector-vector-boho-chic-flower-seamless-pattern-elegant-floral-background-for-wallpaper-gift-paper-398424772.jpg");  */
+    min-width:580px;
+    height: 50vh;
+    background-size: cover;
+    background-position:center ;
+    padding: 30px;
+    text-align:right;
+}
+#sm-banner .banner-box p{
+    font-size: 30;
+}
+#sm-banner .banner-box2 p{
+    font-size: 30;
+}
+
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex start;
+    text-align: center;
+    background-color:#c8a2c8;
+    /* background-image: url(""); */
+    /* background-image: url("https://static.wixstatic.com/media/a2ae29_8924c94c97db4a49a23a5aadbbe11552~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a2ae29_8924c94c97db4a49a23a5aadbbe11552~mv2.jpg");  */
+    min-width:30%;
+    height: 30vh;
+    background-size: cover;
+    background-position:center ;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+#banner3 .banner-box3{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-meM-5IsZ9WYi14FZVheOav7JYXZ8TVVykA&usqp=CAU");
+    
+}
+#banner3 .banner-box4{
+    /* background-color:skyblue; */
+    background-image: url("https://thumbs.dreamstime.com/z/wooden-shelf-background-home-decor-vase-184737515.jpg");
+  
+}
+#banner3 .banner-box5{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRTpWK0Fp6ExbvJ_0ucTMTerqCkGdIJ-4Qwg&usqp=CAU");
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiCZy8_8a660PHVTJ1jJo7AnoVKl6CI2FPpQ&usqp=CAU"); */
+    /* background-color:plum; */
+    
+}
+#banner3 .banner-box button{
+    background-color:black;
+    color: palevioletred;
+    border :0;
+        /* padding: 14px 80px 14px 65px; */
+     background-repeat: no-repeat; 
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:600 ;
+    width: 85;
+    align-self: center;
+}
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 h2{
+    color: black;
+    font-size:22px ;
+    font-weight: 900;
+}
+#banner3 span{
+    color: black;
+    font-size:18px ;
+    font-weight: 900;
+}
+
+#footerRightMenu{
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:teal ;
+  }
+  
+  .fIcon{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  #footerRightMenu h3{
+    color: white;
+  }
