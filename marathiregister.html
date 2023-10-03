@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> DNK </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel= "stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    form {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      font-weight: bold;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    input[type="submit"] {
+      background-color: teal;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function validateForm() {
+      var name = document.forms["form1"]["txtbox1"].value;
+      var email = document.forms["form1"]["txtbox2"].value;
+      var gstin = document.forms["form1"]["txtbox4"].value;
+      var mobile = document.forms["form1"]["txtbox3"].value;
+
+      if (name === "" || email === "" || gstin === "" || mobile === "") {
+        alert("कृपया सर्व आवश्यक क्षेत्रे भरा.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/India_Post_Logo.svg/1200px-India_Post_Logo.svg.png"height="50" width="90" class="logo" alt=""></a>
+    </section>
+  <form name="form1" onsubmit="return validateForm()">
+    <label for="txtbox1">नाव (Name):</label>
+    <input type="text" name="txtbox1" placeholder="पूर्ण नाव">
+    <br><br>
+    <label for="txtbox2">ईमेल (Email):</label>
+    <input type="text" name="txtbox2" placeholder="ईमेल">
+    <br><br>
+    <label for="txtbox3">GSTIN नंबर:</label>
+    <input type="text" name="txtbox4" placeholder="GSTIN नंबर">
+    <br><br>
+    <label for="txtbox4">व्यक्तिगत मोबाइल (Personal Mobile):</label>
+    <input type="text" name="txtbox4" placeholder="व्यक्तिगत मोबाइल">
+    <br><br>
+    <label for="txtbox5">व्यक्तिगत पत्ता (Personal Address):</label>
+    <input type="text" name="txtbox5" placeholder="व्यक्तिगत पत्ता">
+    <br><br>
+    <label for="txtbox6">व्यवसायिक मोबाइल/फोन (Business Mobile/Phone):</label>
+    <input type="text" name="txtbox6" placeholder="व्यवसायिक मोबाइल/फोन">
+    <br><br>
+    <label for="txtbox7">व्यवसायिक मोबाइल (Business Mobile):</label>
+    <input type="text" name="txtbox7" placeholder="व्यवसायिक मोबाइल">
+    <br><br>
+    <label for="txtbox3">व्यवसाय/कंपनीचे नाव (Business/Company Name):</label>
+    <input type="text" name="txtbox3" placeholder="व्यवसाय/कंपनीचे नाव">
+    <br><br>
+    <label for="gender">लिंग (Gender):</label>
+    <select name="gender">
+      <option value="">लिंग निवडा (Select Gender)</option>
+      <option value="Female">मुलगी (Female)</option>
+      <option value="Male">मुलगा (Male)</option>
+      <option value="Other">इतर (Other)</option>
+    </select>
+    <br><br>
+    <label for="dob">जन्मदिन (Date of Birth):</label>
+    <input type="date" name="dob">
+    <br><br>
+    
+    <input type="submit" name="btn1" value="सबमिट करा (SUBMIT)">
+  </form>
+  <footer>
+    <div id="footerRightMenu">
+        <!-- <br><br><br> -->
+        <h3>Follow Us</h3>
+        <div >
+            <img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg" alt="fIcon" class="fIcon">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/745/small/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="tIcon" class="fIcon">
+            <img src="https://img.freepik.com/premium-vector/purple-gradiend-social-media-logo_197792-1883.jpg?w=2000" alt="iIcon" class="fIcon">
+            <!-- <img src="./img/whatsapp.png" alt="" class="fIcon"> -->
+        </div>
+    </div>
+</footer>
+</body>
+</html>
