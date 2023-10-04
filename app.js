@@ -1,3 +1,4 @@
+//THIS IS CODE FOR AFTER CLICKING ON BUY NOW OPTION
 const nav=document.getElementById('navbar');
 
 const productButton = document.querySelector(".productButton");
