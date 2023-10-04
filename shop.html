@@ -5,17 +5,18 @@
     <title> DNK </title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
     <link rel= "stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <section id="header">
         <a href="#"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/India_Post_Logo.svg/1200px-India_Post_Logo.svg.png"height="50" width="90" class="logo" alt=""></a>
 <div>
     <ul id="navbar">
+        <!-- <li> <a href="landing.html">landing</a></li> -->
         <li> <a href="index.html">Home </a> </li>
-        <!-- <li> <a href="about.html">About DNK</a> </li> -->
         <li> <a class="active" href="shop.html">Shop</a> </li>
-        <li> <a href="faqs.html">FAQs</a> </li>
-        <li> <a href="contact.html">contact</a> </li>
+        <li> <a href="login2.html">Login</a> </li>
+        <li> <a href="contact.html">Contact Us</a> </li>
         <!-- <li> <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a> </li> -->
     </ul>
 </div>
@@ -40,6 +41,9 @@
 <section id="blanks"> 
     <br><br><br><br>
 </section>
+
+
+
 <section id="product1" class="section-p1"> 
   
     <div class="pro-container">
@@ -47,7 +51,7 @@
 
 
         <div class="pro">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl0mmvQt31EYJ4OtztvDkuBtkU7tYPJqdqZA&usqp=CAU" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl0mmvQt31EYJ4OtztvDkuBtkU7tYPJqdqZA&usqp=CAU" height="300" alt="">
             <div class="des">
                 <br>
                 <span>lippan art</span>
@@ -60,12 +64,13 @@
                 <i class="fas fa-star"> </i>
             </div>
             <h4>$300</h4>
+            <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' ></i>
         </div>
-        <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
+        
         </div>
 
     <div class="pro">
-        <img src="https://www.tallengestore.com/cdn/shop/products/Indian_Art_-Painting_-_Muralidhar_Krishna_f6052c7e-7708-41fb-944e-2988529df4fa.jpg?v=1481895784" alt="">
+        <img src="https://www.tallengestore.com/cdn/shop/products/Indian_Art_-Painting_-_Muralidhar_Krishna_f6052c7e-7708-41fb-944e-2988529df4fa.jpg?v=1481895784" height="300"alt="">
         <div class="des">
             <br>
             <span>Krishna painting</span>
@@ -78,16 +83,41 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$440</h4>
+        <button class="productButton">BUY NOW!</button> <p> </p><i class='bx bx-cart' height="10"></i>
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="Jack Cruise" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+121 345 678 910" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Ellendel St 2322" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="https://logos-world.net/wp-content/uploads/2020/06/Visa-Logo-2006.png" width="3" height="35" alt="" class="cardIcon">
+                <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-logok-15.png" alt=""height="45" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm"><br>
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button type="button" class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div>
     </div>
+    
+
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
     
     
     <div class="pro">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXuAcA3g_-wYk2dg0n2CbRAPb0EwqsJzgTVw&usqp=CAU" alt="">
+        <img src="https://i.etsystatic.com/35655385/r/il/8f42f4/4888924554/il_340x270.4888924554_cvjh.jpg"height="300" alt="">
         <div class="des">
             <br>
-            <span>Madhubani art</span>
+            <span>Hand knitted dress</span>
             <h5>Shantipriya</h5>
             <div class="star">
             <i class="fas fa-star"> </i>
@@ -97,13 +127,14 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$300</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
 
 
     <div class="pro">
-        <img src="https://cdn.yehaindia.com/wp-content/uploads/2020/05/banarasi-saree-1.jpg" alt="">
+        <img src="https://cdn.yehaindia.com/wp-content/uploads/2020/05/banarasi-saree-1.jpg" height="300" alt="">
         <div class="des">
             <br>
             <span>Silk Saree</span>
@@ -116,13 +147,14 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$120</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
 
         
     <div class="pro">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcBC2IJCSlQl7Gg9nzhqdWyW4KUoJ9kxYlj7FE7q0DCgG0l8AjEZvUvhfbNdwlIyVhKU&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcBC2IJCSlQl7Gg9nzhqdWyW4KUoJ9kxYlj7FE7q0DCgG0l8AjEZvUvhfbNdwlIyVhKU&usqp=CAU" height="300" alt="">
         <div class="des">
             <br>
             <span>Mandala art</span>
@@ -135,13 +167,14 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$230</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
 </div>
     
 
     <div class="pro">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROgzNU7roEiNoVZf1ISpX_2Rwf6J7QNvKKsNHShhAjqAQuZjWZU5TUiaY8Fovsvi0JFwg&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROgzNU7roEiNoVZf1ISpX_2Rwf6J7QNvKKsNHShhAjqAQuZjWZU5TUiaY8Fovsvi0JFwg&usqp=CAU"height="300"  alt="">
         <div class="des">
             <br>
             <span>Mughlai flower vase</span>
@@ -154,12 +187,13 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$140</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
 
     <div class="pro">
-        <img src="https://images.bestofbharat.com/2023/09/MGDT-NMSH-STS-03-019-1-1024x1024.jpg" alt="">
+        <img src="https://images.bestofbharat.com/2023/09/MGDT-NMSH-STS-03-019-1-1024x1024.jpg" height="300" alt="">
         <div class="des">
             <br>
             <span>Warli wall art</span>
@@ -172,6 +206,7 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$120</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
@@ -179,7 +214,7 @@
 
 
     <div class="pro">
-        <img src="https://www.trulyearthy.com/cdn/shop/products/carvedelephant1_720x.jpg?v=1632135188" alt="">
+        <img src="https://www.trulyearthy.com/cdn/shop/products/carvedelephant1_720x.jpg?v=1632135188"height="300" alt="">
         <div class="des">
             <br>
             <span>Carved elephant masterpiece</span>
@@ -192,6 +227,7 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$1000</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
@@ -200,7 +236,7 @@
 
 
     <div class="pro">
-        <img src="https://theknottyrope.com/cdn/shop/files/IMG_0888_90cded08-734e-46c7-ac4a-d3ef20576e75.jpg?v=1692329097&width=800" alt="">
+        <img src="https://theknottyrope.com/cdn/shop/files/IMG_0888_90cded08-734e-46c7-ac4a-d3ef20576e75.jpg?v=1692329097&width=800"height="300" alt="">
         <div class="des">
             <br>
             <span>Brass Lord Natraja</span>
@@ -213,6 +249,7 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$450</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
@@ -220,7 +257,7 @@
 
 
     <div class="pro">
-        <img src="https://i.pinimg.com/736x/52/56/7c/52567cf1b51f44d16537bb099e47428f.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/52/56/7c/52567cf1b51f44d16537bb099e47428f.jpg" height="300"alt="">
         <div class="des">
             <br>
             <span>Temple jewellery</span>
@@ -233,6 +270,7 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$50</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
@@ -240,7 +278,7 @@
 
 
     <div class="pro">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQBt1n3SbX6wCyskwI9RJes_TbEP2zrBPwA&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQBt1n3SbX6wCyskwI9RJes_TbEP2zrBPwA&usqp=CAU"height="300" alt="">
         <div class="des">
             <br>
             <span>Lichi Silk Saree</span>
@@ -253,6 +291,7 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$400</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
@@ -260,7 +299,7 @@
 
 
     <div class="pro">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_bKWR6trz6MvmikAHkR1OJMRrd9gqcHPqykemRN1Q_h3qEKGAXGAVqVw39nZV8VMUKI&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_bKWR6trz6MvmikAHkR1OJMRrd9gqcHPqykemRN1Q_h3qEKGAXGAVqVw39nZV8VMUKI&usqp=CAU"height="300" alt="">
         <div class="des">
             <br>
             <span>Desi Croptop</span>
@@ -273,13 +312,14 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$100</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
 
 
     <div class="pro">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfS2dOESiYtF7H8hr5j7DA6JwA_BKzMOkxOEjbuuquSvxKkXLHvU5jAtddT5K51KRYX1g&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfS2dOESiYtF7H8hr5j7DA6JwA_BKzMOkxOEjbuuquSvxKkXLHvU5jAtddT5K51KRYX1g&usqp=CAU"height="300" alt="">
         <div class="des">
             <br>
             <span>NeckPiece</span>
@@ -292,13 +332,14 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$85</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
 
 
     <div class="pro">
-        <img src="https://dribyhimadri.com/cdn/shop/products/1E6A7415_1000x.jpg?v=1680256416" alt="">
+        <img src="https://dribyhimadri.com/cdn/shop/products/1E6A7415_1000x.jpg?v=1680256416" height="300"alt="">
         <div class="des">
             <br>
             <span>Coord set</span>
@@ -311,13 +352,14 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$140</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
 
 
     <div class="pro">
-        <img src="https://m.media-amazon.com/images/I/41ozBIQHMZL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/41ozBIQHMZL._SX300_SY300_QL70_FMwebp_.jpg"height="300" alt="">
         <div class="des">
             <br>
             <span>Pot</span>
@@ -330,6 +372,7 @@
             <i class="fas fa-star"> </i>
         </div>
         <h4>$440</h4>
+        <button class="productButton">BUY NOW!</button><p> </p><i class='bx bx-cart' height="10"></i>
     </div>
     <!-- <a href="#"><i class="fal fa-shopping-cart"></i></a> -->
     </div>
