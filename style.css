@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 html {
     padding: 0;
     margin: 0;
@@ -174,6 +175,7 @@ color: black;
 }
 #product1{
     text-align:center;
+    background-color: white;
     /* background-image: url("https://img.freepik.com/premium-photo/turquiose-bokeh-abstract-background_63313-1084.jpg?size=626&ext=jpg&ga=GA1.1.1417094803.1695360915&semt=ais"); */
     background-color: #ace0ca;
 }
@@ -190,9 +192,11 @@ color: black;
     flex-wrap:wrap ;
 }
 #product1 .pro{
+    /* background-color:#ace0ca ; */
     background-color:azure;
     width:23%;
-    min-width:250px;
+    height: autos;
+    min-width:300px;
     padding: 17px 20px;
     border:1px solid #62B6B7;
     border-radius: 25px;
@@ -442,7 +446,7 @@ color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color:teal ;
+    background-color:#008080 ;
   }
   
   .fIcon{
@@ -453,3 +457,276 @@ color: black;
   #footerRightMenu h3{
     color: white;
   }
+  .body2{
+    background-color:#CBEDD5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    /* background-image: url("https://www4.lunapic.com/do-not-link-here-use-hosting-instead/16960924935607117?340683");  */
+    background-image: url("https://media.istockphoto.com/id/857091588/photo/old-ruined-arch-of-lotus-mahal-in-hampi-india.webp?b=1&s=170667a&w=0&k=20&c=-daoZaBQ6xqYXo8JI9R3-VpEKcnF0VtGvNa-b6KhRME=");
+    /* background-image: url("https://media.istockphoto.com/id/163851503/photo/indian-palace.jpg?s=612x612&w=0&k=20&c=kLK2qtCq1US_Uc5q_zSq3l5CuBCbW6OB8TkC7LAKqHg="); */
+} 
+  .wrapper{
+    width: 400px;
+    height: 500px;
+    background-color:#CBEDD5;
+    /* background-image: url("https://www4.lunapic.com/do-not-link-here-use-hosting-instead/16960924935607117?340683"); */
+    color: #fff;
+    border: thick double teal;
+    padding: 30px 40px;
+ }
+ .wrapper h1{
+     font-size: 40px;
+     text-align: center;
+     text-decoration: underline ;
+ }
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    background:transparent;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 90%;
+    height: 90%;
+    background:transparent;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 20px;
+    color:black;
+    padding: 20px 45px 20px 20px;
+}
+.input-box ::placeholder{
+    color:439A97;
+}
+
+.input-box i{
+    color: #000;
+   position: absolute;
+   right: 70px;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 20px;
+}
+.wrapper .rem-for{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.rem-for label input{
+    accent-color:black;
+}
+.rem-for a{
+    color: black;
+    text-decoration: none;
+}
+.rem-for a:hover{
+    text-decoration: underline;
+}
+.wrapper .btn{
+    position: absolute;
+    left: 30%;
+    width: 40%;
+    height: 45px;
+    background:transparent;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color:black;
+    text-align: center;
+}
+.but{
+    border: 1px;
+    position: relative;
+}
+.register-Link a{
+    text-decoration: none;
+    font-size: large;
+    color: red;
+}
+.captcha{
+    font-size: larger;
+    text-align: center;
+    color: black;
+    outline: auto;
+}
+#header h3{
+    color: #CBEDD5;
+    font-size: xx-large;
+    align-self: center;
+}
+.landing {
+
+    background-color:white;
+    text-align: center;
+    text-shadow: #008080;
+}
+.landing h1{
+    background-color: #ace0ca;
+    text-align: center;
+    text-shadow: black;
+}
+
+.imgs{
+    text-align: right;
+    /* background-color:#FAAB36; */
+}
+#product1 .bro{
+    background-color:teal;
+    width:23%;
+    height:80%;
+    min-width:250px;
+    padding: 27px 30px;
+    border:3px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2sec ease;
+    position: relative;
+    color: white;
+}
+#product1 .bro:hover {
+    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.06) ;
+
+}
+
+#product1 .bro img{
+    width:80%;
+    border-radius:20px;
+}
+
+#product1 .bro.des{
+    text-align: left;
+    padding: 10px 0;
+
+}
+.payment{
+    width: 90%;
+    padding: 20px;
+  }
+
+  .productButton {
+    /* float: right; */
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+  }
+ 
+  .productButton:hover {
+    background-color: teal;
+    color:white;
+  }
+  .payment {
+    /* width: 500px;
+    height: 500px; */
+    background-color:#f1e8d5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  }
+  .payment h1{
+    color: red;
+  }
+  .payTitle {
+    font-size: 20px;
+    color: lightgray;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .payInput {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  
+  .payInput::placeholder {
+    color: rgb(163, 163, 163);
+  }
+  .cardIcons {
+    display: flex;
+    border-radius: 0%;
+  }
+  
+  .cardIcon {
+    margin-right: 10px;
+    border-radius: 0%;
+  }
+  
+  .cardInfo {
+    display: flex;
+    justify-content:baseline;
+  }
+  .payButton {
+    position: absolute;
+    height: 40px;
+    bottom: -40;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    background-color: #369e62;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+  }
+  .buyButton{
+    right: 0;
+    top: 0;
+  }
+  .sm {
+    width: 30%;
+  }
+  .bx bx-cart{
+    font-size: 100px;
+    line-height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    top: -50px;
+    left: 45%;
+}
