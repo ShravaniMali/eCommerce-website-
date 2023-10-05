@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Text and Image Example</title>
+    <title>DNK</title>
+    <link rel= "stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial;
             text-align: center;  /*Center-align the content horizontally */
+            background-color: #ace0ca;
         }
 
         .container {
-            background-color: #ace0ca;
-            height: 50vh;
+           
+            /* height: 50vh; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,24 +26,58 @@
         }
 
         .content p {
-            font-size: 14px;
+            font-size: 20px;
             font-style: normal;
             font-weight: normal;
             text-decoration: blink;
             text-transform: none;
             color: #000000;
-            background-color: #ace0ca;
+            /* background-color: #ace0ca; */
             display: inline-block;
+        }
+        h3{
+            font-size:xx-large;
         }
     </style>
 </head>
 <body>
+    <section id="header">
+        <a href="#"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/India_Post_Logo.svg/1200px-India_Post_Logo.svg.png"height="50" width="90" class="logo" alt=""></a>
+        <!-- <h3>LOGIN</h3> -->
+    </section>
     <div class="container">
-        <img src="https://5.imimg.com/data5/SELLER/Default/2022/6/HQ/CH/WD/2057063/crs400a.jpg" alt="Centered Image" width="325" height="325">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/6/HQ/CH/WD/2057063/crs400a.jpg" alt="Centered Image" width="400" height="400">
     </div>
+    <p><h3>Handknit wollen sweater <br>~Shantipriya</h3>$70</p>
     <div class="content">
         <p id="text"></p>
     </div>
+    <button class="productButton">BUY NOW!</button> <p> </p>
+    <div class="payment">
+        <h1 class="payTitle">Personal Information</h1>
+        <span class="close">X</span>
+        <label>Name and Surname</label>
+        <input type="text" placeholder="Jack Cruise" class="payInput">
+        <label>Phone Number</label>
+        <input type="text" placeholder="+121 345 678 910" class="payInput">
+        <label>Address</label>
+        <input type="text" placeholder="Ellendel St 2322" class="payInput">
+        <h1 class="payTitle">Card Information</h1>
+        <div class="cardIcons">
+            <img src="https://logos-world.net/wp-content/uploads/2020/06/Visa-Logo-2006.png"  height="35" alt="" class="cardIcon">
+            <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-logok-15.png" alt=""height="45" class="cardIcon">
+        </div>
+        <input type="password" class="payInput" placeholder="Card Number">
+        <div class="cardInfo">
+            <input type="text" placeholder="mm" class="payInput sm">
+            <input type="text" placeholder="yyyy" class="payInput sm"><br>
+            <input type="text" placeholder="cvv" class="payInput sm">
+            
+        </div>
+        <button type="button" class="payButton">Checkout!</button>
+       
+    </div>
+
 
     <script>
         var text = "A handmade woolen sweater, available exclusively on our e-commerce platform, embodies the essence of Indian artisanal craftsmanship and timeless style. Our skilled artisans pour their passion into every stitch, resulting in a cozy, one-of-a-kind garment that promises both comfort and elegance. Crafted from the finest woolen yarn, this sweater offers exceptional warmth and insulation, making it a perfect choice for colder seasons. Embrace the uniqueness of each piece and the warmth it brings, both in terms of style and coziness, by adding this exquisite handmade woolen sweater to your shopping cart today.";
@@ -56,5 +93,6 @@
             }
         }, 200); // Adjust the interval time (in milliseconds) as needed.
     </script>
+    <script src="app.js"> </script>
 </body>
 </html>
