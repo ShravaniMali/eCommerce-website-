@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text and Image Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            text-align: center;  /*Center-align the content horizontally */
+        }
+
+        .container {
+            background-color: #ace0ca;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: blink;
+            text-transform: none;
+            color: #000000;
+            background-color: #ace0ca;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/6/HQ/CH/WD/2057063/crs400a.jpg" alt="Centered Image" width="325" height="325">
+    </div>
+    <div class="content">
+        <p id="text"></p>
+    </div>
+
+    <script>
+        var text = "A handmade woolen sweater, available exclusively on our e-commerce platform, embodies the essence of Indian artisanal craftsmanship and timeless style. Our skilled artisans pour their passion into every stitch, resulting in a cozy, one-of-a-kind garment that promises both comfort and elegance. Crafted from the finest woolen yarn, this sweater offers exceptional warmth and insulation, making it a perfect choice for colder seasons. Embrace the uniqueness of each piece and the warmth it brings, both in terms of style and coziness, by adding this exquisite handmade woolen sweater to your shopping cart today.";
+
+        var words = text.split(" ");
+        var index = 0;
+        var interval = setInterval(function() {
+            if (index < words.length) {
+                document.getElementById("text").textContent += words[index] + " ";
+                index++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 200); // Adjust the interval time (in milliseconds) as needed.
+    </script>
+</body>
+</html>
